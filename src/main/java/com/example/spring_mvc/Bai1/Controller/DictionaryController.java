@@ -1,4 +1,4 @@
-package com.example.spring_mvc.Controller;
+package com.example.spring_mvc.Bai1.Controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,11 +22,10 @@ public class DictionaryController {
     public String show() {
         return "baiTap2.jsp";
     }
-
     @PostMapping("/lookup")
     public String lookup(@RequestParam String key, Model model) {
         String result = dictionary.getOrDefault(key, "Không tìm thấy từ");
         model.addAttribute("result", result);
-        return "baiTap2.jsp";
+        return "bai1/baiTap2.jsp";
     }
 }

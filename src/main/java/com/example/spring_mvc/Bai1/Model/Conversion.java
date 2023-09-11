@@ -1,4 +1,4 @@
-package com.example.spring_mvc.Model;
+package com.example.spring_mvc.Bai1.Model;
 
 public class Conversion {
     private double usdAmount;
